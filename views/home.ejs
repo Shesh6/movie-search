@@ -1,5 +1,24 @@
-<h1>Movie Search</h1>
+<% include partials/header %>
 
-<form action="/results" method="POST">
-    <input type="text" name="search" placeholder="Search">
-</form>
+<div class="container">
+    <h1>Movie Search</h1>
+    <form action="/results" method="POST">
+        <div class="row">
+            <div class="input-group"> 
+                <input type="text" class="form-control" name="title" placeholder="Title" id="title"/>
+                <select name="genre" class="selectpicker form-control" data-live-search="true" id="genre">
+                    <option>Any Genre</option>
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Horror</option>
+                </select> 
+                <span class="input-group-btn">
+                    <button class="btn btn-success my-group-button" type="submit"><strong>GO!</strong></button>
+                </span>
+            </div>
+        </div><!-- /.row -->
+    </form>
+</div>
+
+<% include partials/footer %>

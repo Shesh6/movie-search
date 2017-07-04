@@ -1,0 +1,27 @@
+html, body {
+    background-image: url("camera.png");
+    height:100%;
+}
+
+.container {
+    
+    width: 700px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.input-group {
+    padding: 10px 10px;
+}
+
+#title {
+    width:75%;
+}
+
+#genre{
+    width:25%;
+}

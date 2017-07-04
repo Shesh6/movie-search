@@ -1,7 +1,9 @@
 var express = require("express");
 var app = express();
 var request = require("request");
+// var bs = require("bootstrap");
 
+app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/",function(req,res){
@@ -9,8 +11,8 @@ app.get("/",function(req,res){
 });
 
 app.post("/results",function(req,res){
-    var search = req.query.search;
-    var url = "https://www.omdbapi.com/?s="+search+"&apikey=thewdb"
+    var query = req.query.title;
+    var url = "https://www.omdbapi.com/?s="+query+"&apikey=thewdb";
     request(url, function(error,response,body){
         if(!error && response.statusCode == 200) {
             var data = JSON.parse(body);
