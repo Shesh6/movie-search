@@ -5,9 +5,13 @@
 </div>
 <div class="container">    
     <% data["Search"].forEach(function(movie) { %>
-        <div class="result col-md-4">
-           <h4><%= movie["Title"] %> - <%= movie["Year"] %></h4>
+        <div class="col-md-4">
+            <div class="result" id="<%=movie["imdbID"]%>">   
+               <h2><%= movie["Title"] %> (<%= movie["Year"] %>)</h2>
+               <img src="<%= movie["Poster"] %>"></img>
+            </div>
         </div>
     <% }); %>
+</div>
 
 <% include partials/footer %>

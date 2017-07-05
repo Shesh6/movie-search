@@ -8,6 +8,20 @@ h1 {
     font-weight: 700;
 }
 
+h2{
+    font-size: 20px;
+    height: 50px;
+    margin: 0;
+}
+
+img {
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
 .container {
     background-color: white;
     border-radius: 10px;
@@ -23,16 +37,20 @@ h1 {
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
+.col-md-4{
+    padding: 10px;
+}
+
 .input-group {
     padding: 10px 10px;
 }
 
 .result {
-    background-color: #ffcf3f;
+    border: 3px solid #ffcf3f;
     border-radius: 10px;
-    height: 200px;
-    width: 30%;
-    margin: 1.66% 1.66%;
+    height:520px;
+    padding: 10px;
+    background-color: white;
 }
 
 #title {
