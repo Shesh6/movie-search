@@ -2,9 +2,12 @@
 
 <div class="container">
     <h1>Results:</h1>
-    
-    <% data["Search"].forEach(function(movie) { %>
-        <li><%= movie["Title"] %> - <%= movie["Year"] %></li>
-    <% }); %>
 </div>
+<div class="container">    
+    <% data["Search"].forEach(function(movie) { %>
+        <div class="result col-md-4">
+           <h4><%= movie["Title"] %> - <%= movie["Year"] %></h4>
+        </div>
+    <% }); %>
+
 <% include partials/footer %>

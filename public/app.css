@@ -11,9 +11,10 @@ h1 {
 .container {
     background-color: white;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
-.searchwindow {
+.container searchwindow {
     
     width: 700px;
     height: 150px;
@@ -24,6 +25,14 @@ h1 {
 
 .input-group {
     padding: 10px 10px;
+}
+
+.result {
+    background-color: #ffcf3f;
+    border-radius: 10px;
+    height: 200px;
+    width: 30%;
+    margin: 1.66% 1.66%;
 }
 
 #title {
