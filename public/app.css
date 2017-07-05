@@ -3,15 +3,23 @@ html, body {
     height:100%;
 }
 
+h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 700;
+}
+
 .container {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.searchwindow {
     
     width: 700px;
     height: 150px;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background-color: white;
-    border-radius: 10px;
 }
 
 .input-group {

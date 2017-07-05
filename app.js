@@ -10,7 +10,7 @@ app.get("/",function(req,res){
    res.render("home"); 
 });
 
-app.post("/results",function(req,res){
+app.get("/results",function(req,res){
     var query = req.query.title;
     var url = "https://www.omdbapi.com/?s="+query+"&apikey=thewdb";
     request(url, function(error,response,body){
